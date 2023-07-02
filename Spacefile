@@ -1,0 +1,11 @@
+# Spacefile Docs: https://go.deta.dev/docs/spacefile/v0
+v: 0
+micros:
+  - name: itcc-rep
+    src: ./
+    engine: nodejs16
+    run: node app.js
+    primary: true
+    public_routes:
+      - "/"
+      - "/*"
